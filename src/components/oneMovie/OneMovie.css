@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Films{
+    display: flex;
+    width: 300px;
+    height: 400px;
+    background: red;
+}
+.Films_info{
+}
+.Films_img{
+    width: 250px;
+    height: 350px;
+}
