@@ -1,17 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 
 .Films{
-    display: flex;
-    width: 300px;
-    height: 400px;
-    background: red;
+    width: 200px;
+    height: 370px;
+    margin: 20px;
 }
 .Films_info{
 }
-.Films_img{
-    width: 250px;
-    height: 350px;
+.Film_img{
+    width: 200px;
+    height: 300px;
 }

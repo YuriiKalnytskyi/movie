@@ -1,16 +1,29 @@
 import './App.css';
 import React from 'react'
 import Movie from "./components/movie/Movie";
+import Header from "./components/header/Header";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import MovieDetail from "./components/movieDetail/MovieDetail";
+
 
 function App() {
-  //   const getAllMovie =async () => {
-  //       console.log(await getMovie());
-  //
-  //   }
-  // getAllMovie()
     return (
         <div>
-            <Movie/>
+            <Router>
+            <Header/>
+
+                <Switch>
+                    <Route exact path={"/movie"} render={()=>{
+                        return <Movie/>
+                    }}/>
+                    <Route exact path={"/movie/:id"} render={(props)=>{
+                        return <MovieDetail item={props}/>
+                    }}/>
+
+
+                </Switch>
+
+            </Router>
         </div>
     );
 }

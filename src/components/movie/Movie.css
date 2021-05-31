@@ -1,6 +1,25 @@
-.film{
+.film {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.filmContainer {
+    width: 100%;
+    min-height: 800px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: 20px;
-
+}
+.Btn{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    width: 75px;
+    height: 25px;
+    background: #262020;
+    color: white;
+    border-radius: 10px;
 }

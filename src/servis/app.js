@@ -8,16 +8,25 @@ let options = {
 }
 let axiosInstance = axios.create(options);
 
-const API_KEY = "?api_key=288bb0de612c607f61e04659a2cd2f04&language=uk"
-
+const API_KEY = "?api_key=288bb0de612c607f61e04659a2cd2f04"
+const language = "&language=uk"
 
 const getMovie = (page)=>{
-    return axiosInstance.get('/discover/movie'+API_KEY+'&page='+page)
+    return axiosInstance.get('/discover/movie'+API_KEY+language+'&page='+page)
+
+}
+const getMovieId = (id)=>{
+    return axiosInstance.get('/movie/'+id+API_KEY+language)
+
+}
+const getMovieVideo = (id)=>{
+    return axiosInstance.get('/movie/'+id+'/videos'+API_KEY+language)
 
 }
 
+
 export {
-    getMovie
+    getMovie , getMovieId , getMovieVideo
 }
 
 

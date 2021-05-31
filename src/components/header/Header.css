@@ -1,0 +1,13 @@
+.header{
+    width: 100%;
+    height: 50px;
+    background: #689fe0;
+}
+.ul{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.li{
+    list-style: none;
+}
